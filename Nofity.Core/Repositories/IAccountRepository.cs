@@ -1,8 +1,10 @@
-﻿namespace Nofity.Core.Repositories
+﻿using System.Threading.Tasks;
+
+namespace Nofity.Core.Repositories
 {
     public interface IAccountRepository
     {
-        void Save(Account account);
+        Task SaveAsync(Account account);
         Account Get(AccountId accountId);
     }
 }

@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Nofity.Core.Repositories;
 using Nofity.Core.Services;
+using Notify.SQL;
+using Tacta.EventStore.Repository;
 
 namespace Notify.API
 {
@@ -21,8 +23,12 @@ namespace Notify.API
         {
             services.AddControllers();
 
+            services.AddSingleton<ISqlConnectionFactory>(new SqlConnectionFactory());
+            services.AddTransient<IEventStoreRepository, EventStoreRepository>();       
+
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IAccountService, AccountService>();
+       
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

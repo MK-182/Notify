@@ -21,9 +21,9 @@ namespace Notify.API.Controllers
         }
 
         [HttpGet]
-        public void Get(string email, string password)
+        public async Task Get(string email, string password)
         {
-            _accountService.CreateAccount(email, password);
+            await _accountService.CreateAccount(email, password).ConfigureAwait(false);
         }
     }
 }

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
 
 namespace Nofity.Core.Services
 {
     public interface IAccountService
     {
-        void CreateAccount(string email, string password);
+        Task CreateAccount(string email, string password);
     }
 }

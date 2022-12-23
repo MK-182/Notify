@@ -1,4 +1,6 @@
 ﻿using Nofity.Core.Repositories;
+using Nofity.Core.ValueObjects;
+using System.Threading.Tasks;
 
 namespace Nofity.Core.Services
 {
@@ -11,20 +13,22 @@ namespace Nofity.Core.Services
             _accountRepository = accountRepository;
         }
 
-        public void CreateAccount(string email, string password)
+        public async Task CreateAccount(string email, string password)
         {
-            var account = Account.CreateAccount(email, password);
+            var credentials = new Credentials(email, password);
 
-            _accountRepository.Save(account);
+            var account = Account.CreateAccount(credentials);
+
+            await _accountRepository.SaveAsync(account).ConfigureAwait(false);
         }
 
-        public void DeactivateAccount(AccountId accountId)
+        public async Task DeactivateAccount(AccountId accountId)
         {
             var account = _accountRepository.Get(accountId);
 
             account.DeactivateAccount();
 
-            _accountRepository.Save(account);
+            await _accountRepository.SaveAsync(account).ConfigureAwait(false);
         }
     }
 }

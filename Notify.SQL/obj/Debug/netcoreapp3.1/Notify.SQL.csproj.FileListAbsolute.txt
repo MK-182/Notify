@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.AssemblyInfo.cs
+C:\Users\User\source\repos\Nofity\Notify.SQL\bin\Debug\netcoreapp3.1\Notify.SQL.deps.json
+C:\Users\User\source\repos\Nofity\Notify.SQL\bin\Debug\netcoreapp3.1\Notify.SQL.dll
+C:\Users\User\source\repos\Nofity\Notify.SQL\bin\Debug\netcoreapp3.1\Notify.SQL.pdb
+C:\Users\User\source\repos\Nofity\Notify.SQL\bin\Debug\netcoreapp3.1\Nofity.Core.dll
+C:\Users\User\source\repos\Nofity\Notify.SQL\bin\Debug\netcoreapp3.1\Nofity.Core.pdb
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.csproj.CopyComplete
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.dll
+C:\Users\User\source\repos\Nofity\Notify.SQL\obj\Debug\netcoreapp3.1\Notify.SQL.pdb

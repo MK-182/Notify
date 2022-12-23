@@ -145,3 +145,5 @@ C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\Nofity.Core.dll
 C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\Nofity.Core.pdb
+C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\Notify.SQL.dll
+C:\Users\User\source\repos\Nofity\Notify.API\bin\Debug\netcoreapp3.1\Notify.SQL.pdb

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nofity.Core\Nofity.Core.csproj" />
+    <ProjectReference Include="..\Notify.SQL\Notify.SQL.csproj" />
   </ItemGroup>
 
 

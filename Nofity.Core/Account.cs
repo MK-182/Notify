@@ -1,4 +1,5 @@
 ﻿using Nofity.Core.DomainEvents;
+using Nofity.Core.ValueObjects;
 using Tacta.EventStore.Domain;
 
 namespace Nofity.Core
@@ -7,13 +8,12 @@ namespace Nofity.Core
     {
         public override AccountId Id { get; protected set; }
 
-        public static Account CreateAccount(string email, string password)
+        public static Account CreateAccount(Credentials credentials)
         {
-            // validacija todo
             var account = new Account();
 
-            var accountId = new AccountId(email);
-            var @event = new AccountCreated(accountId.ToString(), email, password);
+            var accountId = new AccountId(credentials.Email);
+            var @event = new AccountCreated(accountId.ToString(), credentials.Email, credentials.Password);
             account.Apply(@event);
 
             return account;
@@ -27,7 +27,8 @@ namespace Nofity.Core
         }
 
         public void On(AccountCreated @event)
-        { 
+        {
+            Id = new AccountId(@event.AggregateId);
         }
 
         public void On(AccountDeactivated @event)

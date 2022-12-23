@@ -1,7 +1,6 @@
 C:\Users\User\source\repos\Nofity\Nofity.Core\bin\Debug\netcoreapp3.1\Nofity.Core.deps.json
 C:\Users\User\source\repos\Nofity\Nofity.Core\bin\Debug\netcoreapp3.1\Nofity.Core.dll
 C:\Users\User\source\repos\Nofity\Nofity.Core\bin\Debug\netcoreapp3.1\Nofity.Core.pdb
-C:\Users\User\source\repos\Nofity\Nofity.Core\obj\Debug\netcoreapp3.1\Nofity.Core.csprojAssemblyReference.cache
 C:\Users\User\source\repos\Nofity\Nofity.Core\obj\Debug\netcoreapp3.1\Nofity.Core.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\Nofity\Nofity.Core\obj\Debug\netcoreapp3.1\Nofity.Core.AssemblyInfo.cs
 C:\Users\User\source\repos\Nofity\Nofity.Core\obj\Debug\netcoreapp3.1\Nofity.Core.dll
