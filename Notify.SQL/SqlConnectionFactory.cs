@@ -7,7 +7,7 @@ namespace Notify.SQL
     {
         public SqlConnection SqlConnection()
         {
-            var connectionString = @"Data Source=DESKTOP-H2ULPLT\SQLEXPRESS;Initial Catalog=Notify;User ID=sa;Password=sa";
+            var connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=Notify;Integrated Security=true;TrustServerCertificate=True;";
             return new SqlConnection(connectionString);
         }
     }
