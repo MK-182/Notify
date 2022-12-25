@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-Notify.Sender-0D378482-8918-4AAE-B9CB-9A75B351FA45</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nofity.Core\Nofity.Core.csproj" />
+    <ProjectReference Include="..\Notify.SQL\Notify.SQL.csproj" />
+  </ItemGroup>
+</Project>

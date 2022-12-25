@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Notify.Projections": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

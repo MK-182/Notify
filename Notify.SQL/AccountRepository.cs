@@ -1,5 +1,6 @@
 ﻿using Nofity.Core;
 using Nofity.Core.Repositories;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Tacta.EventStore.Domain;
@@ -28,9 +29,20 @@ namespace Notify.SQL
             await _eventStoreRepository.SaveAsync(aggregateRecord, eventRecords).ConfigureAwait(false);
         }
 
-        public Account Get(AccountId accountId)
+        public async Task<Account> GetAsync(AccountId accountId)
         {
-            return new Account();
+            var eventRecords = await _eventStoreRepository.GetAsync<DomainEvent>(accountId.ToString()).ConfigureAwait(false);
+
+            var events = new List<DomainEvent>();
+
+            foreach (var eventRecord in eventRecords)
+            {
+                var e = eventRecord.Event;
+                e.WithVersionAndSequence(eventRecord.Version, eventRecord.Sequence);
+                events.Add(e);
+            }
+
+            return new Account(events);
         }
     }
 }

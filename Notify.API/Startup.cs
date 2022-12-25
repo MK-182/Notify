@@ -24,7 +24,7 @@ namespace Notify.API
             services.AddControllers();
 
             services.AddSingleton<ISqlConnectionFactory>(new SqlConnectionFactory());
-            services.AddTransient<IEventStoreRepository, EventStoreRepository>();       
+            services.AddTransient<IEventStoreRepository, EventStoreRepository>();
 
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IAccountService, AccountService>();

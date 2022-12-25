@@ -5,6 +5,6 @@ namespace Nofity.Core.Repositories
     public interface IAccountRepository
     {
         Task SaveAsync(Account account);
-        Account Get(AccountId accountId);
+        Task<Account> GetAsync(AccountId accountId);
     }
 }
